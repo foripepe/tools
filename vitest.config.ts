@@ -11,7 +11,8 @@ export default defineConfig({
     coverage: {
       provider: 'v8',
       reporter: ['text', 'html'],
-      exclude: ['node_modules/', 'src/test/setup.ts'],
+      exclude: ['node_modules/', 'src/test/setup.ts', 'e2e/'],
     },
+    exclude: ['node_modules/**', 'e2e/**'],
   },
 }); 
